@@ -1,0 +1,266 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif; /* More modern font */
+    margin: 0;
+    padding: 0;
+    background-color:#003366 ;
+}
+.header-section {
+    background-color: #003366; /* Darker, more professional blue */
+    padding: 10px 0 0; /* Slightly reduced vertical padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+.header-top {
+    display: flex;
+    justify-content: center; /* Center the logo and text */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 10px; /* Reduced margin */
+    width: 100%; /* Ensure it takes full width */
+}
+.header-logo {
+    /* Removed fixed width, will adjust based on image size */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80px; /* Limit the maximum height of the logo */
+    margin-right: 20px; /* Increased margin */
+    position: absolute;
+    left: 10px;
+    border-radius: 10%;
+    box-shadow: #000000 10px 10px 20px;
+}
+.college-name {
+    color: white;
+    font-size: 1.4rem; /* Slightly larger font size */
+    text-align: center; /* Center the text */
+    margin-right: 20px;
+}
+.college-name h1{
+     font-size: 1.4rem;
+     margin-bottom: 0.5rem;
+}
+ .college-name p{
+    font-size: 0.9rem;
+}
+
+.header-bottom {
+    padding: 0;
+    margin: 0;
+    background-color: #002244; /* Slightly darker shade */
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Center the navigation menu */
+    padding: 10px 0;
+}
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu ul li {
+    margin: 0 15px; /* Adjusted horizontal margin */
+}
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Increased font size */
+    font-weight: 500; /* Medium font weight for better readability */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+.nav-menu ul li a:hover {
+    color: #FFCC00; /* Brighter hover color */
+}
+/* Responsive adjustments */
+@media (max-width: 992px) { /* Medium screens and below (tablets) */
+    .college-name {
+        font-size: 1.2rem; /* Smaller font size on tablets */
+    }
+    .nav-menu ul li {
+        margin: 0 10px; /* Reduced horizontal margin on tablets */
+    }
+    .nav-menu ul li a {
+        font-size: 0.9rem; /* Slightly smaller font on tablets */
+    }
+    .header-logo{
+       max-height: 70px;
+    }
+}
+@media (max-width: 768px) { /* Small screens and below (phones) */
+    .header-top {
+        flex-direction: column; /* Stack logo and text vertically on phones */
+        text-align: center;
+    }
+    .header-logo {
+        margin-bottom: 10px; /* Add margin below logo on phones */
+        margin-right: 0;
+    }
+    .college-name {
+        font-size: 1rem; /* Further reduced font size on phones */
+    }
+    .nav-menu ul {
+        flex-direction: column; /* Stack menu items vertically on phones */
+        text-align: center;
+    }
+    .nav-menu ul li {
+        margin: 5px 0; /* Reduced vertical margin on phones */
+    }
+     .college-name h1{
+        font-size: 1.2rem;
+     }
+     .college-name p{
+        font-size: 0.8rem;
+     }
+}
+
+
+
+.about-pmec-section {
+    padding: 20px;
+    margin: 0; /* Changed margin to 0 */
+    background-color: #000000; /* Changed background color to black */
+    border-radius: 0; /* Removed border-radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: none; /* Removed max-width */
+    /* width: 100%; Made width 100% */
+  }
+  
+  .about-pmec-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1000px; /* Added max-width to content */
+    margin: 0 auto; /* Centered content */
+  }
+  
+  .about-pmec-text {
+    text-align: justify;
+    line-height: 1.6;
+    color: #ffffff; /* Changed text color to white */
+  }
+  
+  .about-pmec-image {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  
+  .about-pmec-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .about-pmec-section {
+      padding: 15px;
+      margin: 0; /* Changed margin to 0 */
+      width: 100%;
+    }
+  
+    .about-pmec-content {
+      flex-direction: column;
+    }
+  
+    .about-pmec-image {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .video-container {
+    width: 100%;
+    overflow: hidden; /* To handle potential video overflow */
+    position: relative; /* Allows for absolute positioning of elements inside */
+  }
+  
+  .video-container video {
+    width: 100%; /* Make video take up the full width */
+    height: auto; /* Maintain video aspect ratio */
+    display: block; /* Removes extra space below video in some browsers */
+  }
+
+
+.notice-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Increased width */
+    max-width: 1000px; /* Added max-width */
+}
+.notice-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.notice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.notice-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+}
+.notice-item span {
+    font-weight: 500;
+    color: #34495e;
+}
+.notice-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+.notice-item a:hover {
+    color: #0056b3;
+}
+@media (max-width: 768px) {
+    .notice-section {
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+    .notice-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .notice-item span {
+        margin-bottom: 5px;
+    }
+}
+
+
+footer{
+    background-color: #2c3e50; /* Darker background for footer */
+    color: #ecf0f1; /* Lighter text color */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px; /* Add space above the footer */
+    border-top: 1px solid #34495e; /* Add a border line */
+}
+footer p {
+margin-bottom: 0; /* Remove default paragraph margin */
+}
+@media (max-width: 768px) {
+footer {
+    padding: 15px 0;
+    font-size: 0.8rem;
+}
+}

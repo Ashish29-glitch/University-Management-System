@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+    <header class="header-section">
+        <div class="header-top">
+            <img src="./assets/logo.jpg" alt="College Logo" class="header-logo">
+            <div class="college-name">
+                <h1>Parala Maharaja Engineering College, Berhampur, Odisha</h1>
+                <p>(A Govt. Engineering College affiliated to BPUT, Odisha, Rourkela)</p>
+                <p>ପାରଳା ମହାରାଜା ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ, ବ୍ରହ୍ମପୁର, ଓଡିଶା</p>
+                <p>(ସରକାରୀ ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ)</p>
+            </div>
+             <!-- <img src="https://www.pmec.ac.in/images/NAAC-Logo.png" alt="NAAC Logo" style="height: 80px; margin-left: 20px;"> -->
+        </div>
+        <div class="header-bottom">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#notice">Notices</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+
+                    <!-- <li><a href="#">Institute</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Campus and Facilities</a></li>
+                    <li><a href="#">Research and Development</a></li>
+                    <li><a href="#">Training and Placement</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Mandatory Disclosure</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div id="error" class="error-message"></div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 College Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="./js/login.js"></script>
+</html>

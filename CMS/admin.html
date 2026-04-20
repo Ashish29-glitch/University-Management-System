@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+<body>
+
+    <header class="header-section">
+        <div class="header-top">
+            <img src="./assets/logo.jpg" alt="College Logo" class="header-logo">
+            <div class="college-name">
+                <h1>Parala Maharaja Engineering College, Berhampur, Odisha</h1>
+                <p>(A Govt. Engineering College affiliated to BPUT, Odisha, Rourkela)</p>
+                <p>ପାରଳା ମହାରାଜା ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ, ବ୍ରହ୍ମପୁର, ଓଡିଶା</p>
+                <p>(ସରକାରୀ ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ)</p>
+            </div>
+             <!-- <img src="https://www.pmec.ac.in/images/NAAC-Logo.png" alt="NAAC Logo" style="height: 80px; margin-left: 20px;"> -->
+        </div>
+        <div class="header-bottom">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#notice">Notices</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-section">
+        <h2>Administrative Dashboard</h2>
+        <div class="kpi-cards-container">
+            <div class="kpi-card" data-kpi="students">
+                <div class="kpi-value">7</div>
+                <div class="kpi-label">Total Students</div>
+                <button class="edit-button">Edit</button>
+            </div>
+            <div class="kpi-card" data-kpi="staff">
+                <div class="kpi-value">5</div>
+                <div class="kpi-label">Total Staff</div>
+                <button class="edit-button">Edit</button>
+            </div>
+            <div class="kpi-card" data-kpi="courses">
+                <div class="kpi-value">8</div>
+                <div class="kpi-label">Total Courses</div>
+                <button class="edit-button">Edit</button>
+            </div>
+            <div class="kpi-card" data-kpi="subjects">
+                <div class="kpi-value">8</div>
+                <div class="kpi-label">Total Subjects</div>
+                <button class="edit-button">Edit</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit KPI Value</h2>
+        <label for="modal-kpi-value">Value:</label>
+        <input type="number" id="modal-kpi-value" name="kpiValue">
+        <button id="save-button">Save</button>
+      </div>
+    </div>
+
+
+    <!-- <div class="admin-section">
+        <h2>Add Faculty</h2>
+        <form id="addFacultyForm" class="admin-form">
+            <div class="form-group">
+                <label for="facultyName">Faculty Name:</label>
+                <input type="text" id="facultyName" name="facultyName" placeholder="Enter faculty name" required>
+            </div>
+            <div class="form-group">
+                <label for="facultyPassword">Password:</label>
+                <input type="password" id="facultyPassword" name="facultyPassword" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Add Faculty</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+
+    <div class="admin-section">
+        <h2>Add Student</h2>
+        <form id="addStudentForm" class="admin-form">
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+            </div>
+            <div class="form-group">
+                <label for="studentPassword">Password:</label>
+                <input type="password" id="studentPassword" name="studentPassword" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Add Student</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div> -->
+
+
+
+
+    <div class="admin-container">
+        <h2>Admin Page</h2>
+        <div class="admin-section">
+            <h2>Add Faculty</h2>
+            <form id="addFacultyForm" class="admin-form">
+                <div class="form-group">
+                    <label for="facultyName">Faculty Name:</label>
+                    <input type="text" id="facultyName" name="facultyName" placeholder="Enter faculty name" required>
+                </div>
+                <div class="form-group">
+                    <label for="facultyPassword">Password:</label>
+                    <input type="password" id="facultyPassword" name="facultyPassword" placeholder="Enter password" required>
+                </div>
+                <button type="submit">Add Faculty</button>
+            </form>
+        </div>
+
+        <div class="admin-section">
+            <h2>Add Student</h2>
+            <form id="addStudentForm" class="admin-form">
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentPassword">Password:</label>
+                    <input type="password" id="studentPassword" name="studentPassword" placeholder="Enter password" required>
+                </div>
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 College Management System. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="./js/login.js"></script>
+</html>

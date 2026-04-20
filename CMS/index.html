@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header-section">
+        <div class="header-top">
+            <img src="./assets/logo.jpg" alt="College Logo" class="header-logo">
+            <div class="college-name">
+                <h1>Parala Maharaja Engineering College, Berhampur, Odisha</h1>
+                <p>(A Govt. Engineering College affiliated to BPUT, Odisha, Rourkela)</p>
+                <p>ପାରଳା ମହାରାଜା ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ, ବ୍ରହ୍ମପୁର, ଓଡିଶା</p>
+                <p>(ସରକାରୀ ଯାନ୍ତ୍ରିକ ମହାବିଦ୍ୟାଳୟ)</p>
+            </div>
+             <!-- <img src="https://www.pmec.ac.in/images/NAAC-Logo.png" alt="NAAC Logo" style="height: 80px; margin-left: 20px;"> -->
+        </div>
+        <div class="header-bottom">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#notice">Notices</a></li>
+                    <li><a href="http://localhost/BBM/index.php">Administrative</a></li>
+
+
+                    <!-- <li><a href="#">Institute</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Campus and Facilities</a></li>
+                    <li><a href="#">Research and Development</a></li>
+                    <li><a href="#">Training and Placement</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Mandatory Disclosure</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="about-pmec-section" id="about">
+        <div class="about-pmec-content">
+          <div class="about-pmec-image">
+            <img src="./assets/about.jpg" alt="Parala Maharaja Engineering College">
+          </div>
+          <div class="about-pmec-text">
+            <h2>About Parala Maharaja Engineering College</h2>
+            <p>
+              Parala Maharaja Engineering College (PMEC), Berhampur, came into existence in the year 2009.
+              It is a constituent Government Engineering College of Biju Patnaik University of Technology (BPUT), Odisha.
+              This college is one of the premier technical institutes in southern Odisha.
+            </p>
+            <p>
+             The main objective of the institution is to produce quality technical manpower.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="video-container">
+        <video
+          src="./assets/intro.mp4"  /* Replace with the actual path to your video file */
+          autoplay
+          muted
+          loop
+          playsinline  /* Important for iOS Safari to allow autoplay */
+        ></video>
+      </div>
+
+
+    <div class="notice-section" id="notice">
+        <h2>Notices & Events</h2>
+        <ul class="notice-list">
+            <li class="notice-item">
+                <span>Extension of Deadline for Fresh Students Application</span>
+                <a href="./assets/pdf1.pdf" onclick="downloadPDF('./assets/pdf1.pdf')">Download PDF</a>
+            </li>
+            <li class="notice-item">
+                <span>Post Matric Scholarship Scheme 2024-25</span>
+                <a href="./assets/pdf2.pdf" onclick="downloadPDF('./assets/pdf2.pdf')">Download PDF</a>
+            </li>
+            <li class="notice-item">
+                <span>AICTE SWANATH Scholarship Scheme 2024-25</span>
+                <a href="./assets/pdf3.pdf" onclick="downloadPDF('./assets/pdf3.pdf')">Download PDF</a>
+            </li>
+            <li class="notice-item">
+                <span>Advertisement for Recruitment of Project Associate</span>
+                <a href="./assets/pdf4.pdf" onclick="downloadPDF('./assets/pdf4.pdf')">Download PDF</a>
+            </li>
+            <li class="notice-item">
+                <span>Revised Deadlines of Fresh & Renewal Post-Matric Applications</span>
+                <a href="./assets/pdf5.pdf" onclick="downloadPDF('./assets/pdf5.pdf')">Download PDF</a>
+            </li>
+            <li class="notice-item">
+                <span>Internal Assessment Test for B.Tech & Tech Dual Degree</span>
+                <a href="./assets/pdf6.pdf" onclick="downloadPDF('./assets/pdf6.pdf')">Download PDF</a>
+            </li>
+        </ul>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 College Management System. All rights reserved.</p>
+    </footer>
+      
+</body>
+<script src="./js/script.js"></script>
+</html>
