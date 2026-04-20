@@ -356,7 +356,7 @@ The system uses a MySQL database named `uni` with the following tables:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/university-management-system.git
+   git clone https://github.com/Ashish29-glitch/University-Management-System.git
    cd university-management-system
    ```
 
